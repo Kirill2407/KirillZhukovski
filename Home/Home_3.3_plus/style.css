@@ -1,0 +1,34 @@
+body{
+   padding-left: 10%;
+   padding-right: 10%;
+}
+
+
+h1 {
+   font-family: 'Comforter', cursive;
+   
+}
+
+h3{
+   font-family: 'Hachi Maru Pop', cursive ;
+}
+
+div{
+   background-color: black;
+   
+   
+}
+
+span{
+   font-family: 'Hachi Maru Pop', cursive;
+}
+
+p{
+   text-indent: 2cm;
+   font-family: 'Hachi Maru Pop', cursive;
+   color: aliceblue;
+}
+
+footer{
+   
+}

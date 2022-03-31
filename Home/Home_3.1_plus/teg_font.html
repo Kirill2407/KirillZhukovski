@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- НАЧАЛО КОДА ФАВИКОНКИ-->
+   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+   <link rel="manifest" href="favicons/site.webmanifest">
+   <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#603cba">
+   <meta name="msapplication-TileColor" content="#603cba">
+   <meta name="theme-color" content="#ffffff">
+   <!-- КОНЕЦ КОДА ФАВИКОНКИ-->
+
+
+   <link rel="stylesheet" href="style.css">
+   <title>Teg &lt;font&gt;</title>
+</head>
+
+<body>
+
+   <!--  
+   При кодировании цвета в устаревшем теге FONT можно указывать некоторые забавные значения, например:
+   <font color=""#BruceWillis"">...</font>
+   <font color=""#CANDY"">...</font>
+   разберитесь, что при этом за цвета получаются и почему."-->
+
+   <header>
+      <h1 style="text-shadow: 3px 3px 3px #b0e000;" align="center" >About teg <span style="text-shadow: 3px 3px 3px #ca0000;">&lt;font&gt;</span></h1>
+      <hr>
+      <h3>Суть задания:</h3>       
+         <p>
+            При кодировании цвета в устаревшем теге &lt;FONT&gt; можно указывать некоторые забавные значения, например:
+            <br>
+            &lt;font color="#BruceWillis"&gt;<font color="#BruceWillis">придает зеленый оттенок цвету шрифта</font>
+            &lt;/font&gt;, <br>
+            &lt;font color="#CANDY"&gt;<font color="#CANDY">придает красный оттенок цвету шрифта</font>
+            &lt;/font&gt;. <br> <br>
+   
+            Небходимо разобраться, что при этом за цвета получаются и почему?
+         </p>
+      
+      <hr>
+   </header>
+
+   <div>
+      <h3>Ответ:</h3>
+      <p>В объяснении будем использовать синтаксис подобный RGB (<span style="color: red;">RR</span>, <span
+            style="color: green;">GG</span>, <span style="color: blue;">BB</span>), чтобы показать, как значение
+         разбивается на <span style="color: red;">красную</span>, <span style="color: green;">зеленую</span> и <span
+            style="color: blue;">синюю</span> составляющие. Алгоритм синтаксического анализа цвета ведет себя
+         следующим образом. <br><br> Чтобы получить 6-значное шестнадцатеричное значение из любого слова нужно заменить все
+         НЕшестнадцатеричные символы (от 0 до 9 и от A до F) на 0 (ноль). Неправильная цифра или буква просто интерпретируется как 0 (ноль). </p>
+      <h3>Точнее рассмотрим на нашем примере с "#BruceWillis":</h3>
+
+      <ul style="font-size: 18px; font-weight: bold;">
+         <li>Заменяем все неправильные шестнадцатеричные символы нулями 0, и BruceWillis превращается в b00ce000000</li>
+         <li>“Добиваем” число нулями до количества знаков, делимого на 3 (то есть в нашем случае с 11 до 12), получаем
+            b00ce0000000</li>
+         <li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB: RGB (b00c, e000, 0000)</li>
+         <li>Обрезаем каждый из аргументов справа на два символа, оставляя левых 2 символа, и получаем наш результат RGB
+            (b0, e0, 00) = #b0e000 или он же RGB(176, 224, 0).</li>
+      </ul>
+      <p>Поэтому буквенное значение в виде "#BruceWillis" придает тексту<span
+            style="color: #b0e000; font-family: 'Times New Roman', Times, serif ;"> зеленный оттенок.</span></р>
+         <hr>
+   </div>
+
+   <div>
+      <h3>Повторим на нашем примере с "#CANDY":</h3>
+
+      <ul style="font-size: 18px; font-weight: bold;">
+         <li>Заменяем все неправильные шестнадцатеричные символы нулями 0, и CANDY превращается в ca0d0</li>
+         <li>“Добиваем” число нулями до количества знаков, делимого на 3 (то есть в нашем случае с 5 до 12), получаем
+            ca0d00000000</li>
+         <li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB: RGB (ca0d, 0000, 0000)</li>
+         <li>Обрезаем каждый из аргументов справа на два символа, оставляя левых 2 символа, и получаем наш результат RGB
+            (ca, 00, 00) = #ca0000 или он же RGB(202, 0, 0).</li>
+      </ul>
+      <p>Поэтому буквенное значение в виде "#CANDY" придает тексту<span
+            style="color: #ca0000; font-family: 'Times New Roman', Times, serif ;"> красный оттенок.</span></р>
+         <hr>
+   </div>
+
+   <footer style="background-color: #c0dcbe;">
+      <hr>
+      <p style="font-size: 12px; text-indent: 0cm; font-family: sans-serif; color: red;">Материал подготовлен в качестве
+         домашнего
+         задания
+         по курсу &#171;Основы веб технологий&#187; <br>
+         Тема 3: CSS - Цвет. Шрифт. Границы. Размеры. <br>
+         Исполнитель: Kirill Zhukovski &copy;<img src="img/GoodBeetle round 260x260.png" width="26" title="GoodBeetle"
+            alt="GoodBeetle"> <br>
+         6824682@mail.ru <br>
+         +375296824682
+      </p>
+      <hr>
+   </footer>
+</body>
+
+</html>

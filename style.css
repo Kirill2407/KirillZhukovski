@@ -1,0 +1,19 @@
+body{
+   padding-left: 10%;
+   padding-right: 10%;
+   
+}
+h1 {
+   padding-left: 5%;
+   padding-top: 1%
+} 
+
+h2{
+   padding-left: 5%;
+   padding-top: 1%
+}
+
+p, ul {
+   padding-left: 5%;
+   ;
+}

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'ReggaeOne-Regular';
+  src: url('ReggaeOne-Regular.eot');
+  src: url('ReggaeOne-Regular.eot?#iefix') format('embedded-opentype'),
+       url('ReggaeOne-Regular.svg#ReggaeOne-Regular') format('svg'),
+       url('ReggaeOne-Regular.ttf') format('truetype'),
+       url('ReggaeOne-Regular.woff') format('woff'),
+       url('ReggaeOne-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
