@@ -3,12 +3,24 @@ body{
    padding-right: 10%;
    
 }
+
+header{
+   background: bisque;
+}
+
+div{
+   background-color: gold;
+}
 h1 {
+   font-family: 'Roboto', sans-serif;
+   color: limegreen;
    padding-left: 5%;
    padding-top: 1%
+
 } 
 
 h2{
+   font-family: 'Roboto', sans-serif;;
    padding-left: 5%;
    padding-top: 1%
 }
@@ -16,4 +28,7 @@ h2{
 p, ul {
    padding-left: 5%;
    ;
+}
+a{
+   font-family: 'Roboto', sans-serif;;
 }
