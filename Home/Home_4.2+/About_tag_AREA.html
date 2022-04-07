@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About teg &lt;AREA&gt; </title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
+   <style>
+      body {
+         margin: 30%;
+         margin-top: 2%;
+         font-family: cursive;
+         font-size: large;
+      }
+   </style>
+</head>
+
+<body style="background-color: dimgray;">
+
+   <header style="background-color: white; padding-left: 10px;">
+      <div>
+         <h1>Домашнее задание № 4.1+</h1>
+         <p>
+            Разобраться как работает тег &lt;AREA&gt;, разработать страничку для демонстрации его возможностей.
+         </p> <br>
+      </div>
+   </header>
+   <hr>
+
+   <div style="background-color: white; padding-left: 10px;">
+      <div>
+         <h2
+            style=" font-family: 'Rubik Puddles', cursive; font-size: 50px; text-shadow: 3px 3px 3px red; text-align: center; padding-top: 50px;">
+            HTML тег &lt;AREA&gt;</h2><br>
+         <p>
+         <table align="center">
+            <caption>поддержка браузера</caption>
+            <tr>
+               <th><img src="img/brouser_1.png" title="Google_Chrome" alt="Google_Chrome"></th>
+               <th><img src="img/brouser_2.png" title="Internet Explorer" alt="Internet Explorer"></th>
+               <th><img src="img/brouser_3.png" title="Mozilla" alt="Mozilla"></th>
+               <th><img src="img/brouser_4.png" title="Safari" alt="Safari"></th>
+               <th><img src="img/brouser_5.png" title="Opera" alt="Opera"></th>
+            </tr>
+            <tr style="text-align: center;">
+               <td>да</td>
+               <td>да</td>
+               <td>да</td>
+               <td>да</td>
+               <td>да</td>
+            </tr>
+         </table>
+         </p>
+         <h2>Описание</h2>
+
+
+         <p>Тег &lt;area&gt; (от англ. area - область) определяет активные области изображения, которые являются
+            ссылками.<br>
+            Рисунок с привязанными к нему активными областями называют в совокупности картой-изображением или
+            навигационной
+            картой.
+            Такая карта по внешнему виду ничем не отличается от обычного изображения, но при этом оно может быть разбито
+            на
+            невидимые зоны разной формы, где каждая из областей служит ссылкой.</p> <br>
+
+         <p>Представьте, у нас на сайте есть изображение, и у вас появилась потребность сделать часть этого изображения
+            ссылкой. Это может быть и прямоугольник, и круг, и многоугольник. В этом вам помогут навигационные карты.
+            Ссылка может быть как на HTML-документ, так и на любой другой формат файла. </p><br>
+
+         <p>Элемент &lt;area&gt; задаёт форму области, её размеры, устанавливает адрес документа, на который следует
+            сделать ссылку. Тег &lt;area&gt; всегда располагается в контейнере &lt;map&gt;, который связывает координаты
+            областей с изображением. Несколько областей могут перекрывать друг друга, сверху будет та, которая в коде
+            HTML
+            располагается выше. Закрывающий тег не требуется.</p> <br>
+      </div>
+
+      <div>
+         <h3>Давайте разберем, как эти навигационные карты прописываются в коде.</h3>
+
+         <p>Сначала идет обычное изображение, добавляется атрибут usemap, потом идет символ «#» и далее – название нашей
+            карты. Затем открывающий тег &lt;map&gt;, атрибут name, значение атрибута name – значение нашей карты. Далее
+            следует тег &lt;area&gt;, который имеет атрибуты:</p>
+
+
+         <div style="padding-left: 20px;">
+            <ul>
+               <li>shape – это форма нашей фигуры. Может принимать значения такие, как rect (прямоугольник), circle
+                  (круг)
+                  и poly (многоугольник).</li>
+               <li>coords – координаты.
+                  <ul type="circle">
+                     <li>
+                        Для прямоугольника указывается четыре координаты: x1, y1, x2, y2. Рассмотрим их на примере:
+                        левый
+                        верхний угол – точка с координатами (x1,y1), правый нижний угол – (x2, y2). Вспоминаем школьную
+                        математику. Существуют координатные прямые: ось Х и ось У. В нашем случае ось Х направлена
+                        вправо,
+                        а ось У – вниз. Проведя перпендикуляры от вершин прямоугольника до осей, получим, что координаты
+                        идут в таком порядке: по оси Х – x1, x2; по оси Y – y1, y2. В итоге по двум точкам с
+                        координатами
+                        (x1,y1) и (x2,y2) и строится наш прямоугольник. <br>
+                        <img src="img/coordinates1.png" title="координаты прямоугольника"
+                           alt="координаты прямоугольника" width="250px">
+                     </li>
+                     <li>
+                        Координаты круга задаются иначе: задается x, y (центр круга) и радиус R. <br>
+                        <p style="padding-left: 16px;"><img src="img/coordinates2.png" title="координаты круга"
+                              alt="координаты круга" width="250px"></p>
+                     </li>
+                     <li>
+                        Многоугольник строится совсем по-другому: задаются координаты первой точки, второй, третьей и
+                        т.д.
+                        Они записываются последовательно, и последовательно строится сам многоугольник. <br>
+                        <img src="img/coordinates3.png" title="координаты многоугольника"
+                           alt="координаты многоугольника" width="250px">
+                     </li>
+                  </ul>
+               </li>
+               <li> href – ссылка на которую ведет наша форма в изображении. Не важно, какая фигуря является формой:
+                  прямоугольник, круг или многоугольник – атрибут href может применяться везде.</li>
+               <li> alt – всплывающая подсказка к форме. Указывается в кавычках.</li>
+            </ul>
+         </div>
+         <p>Последним тегом будет &lt;/map&gt;, который закрывает нашу карту.</p>
+         <p>Пример моего кода можно увидеть ниже на картинке:</p>
+         <p><img src="img/HTML_code.png" alt="картинка примера кода" style="width: 100%;"></p>
+      </div>
+
+      <div>
+         <p>Теперь посмотрим, что у нас получилось: </p>
+         <p>Название статьи с картинкой взято с портала www.autonews.ru</p>
+
+         <h3>&#171;Яндекс.Авто&#187; установят на 2 млн автомобилей Lada, Renault и Nissan <br>
+            Подробнее на <a href="https://www.autonews.ru/news/5ce3b8e09a79478724b4e283" target="AAA">Autonews</a>:</h3>
+         <p>Мультимедийный монитор автомобиля с сенсорным экраном. Убедимся в этом, кликнув &#128070; на иконки.</p>
+         <div>
+
+
+            <div style="text-align: center avto; ">
+               <img src="img/auto_multimedia.jpg" title="сенсорная мультимедиа в автомобиле"
+                  alt="мультимедиа в автомобиле" width="100%" usemap="#buttons">
+               <map name="buttons">
+                  <area shape="circle" coords="685,159,21" href="https://yandex.by/" target="AAA" title="www.yandex.by"
+                     alt="Кнопка yandex">
+                  <area shape="rect" coords="560,139,601,180" href="https://yandex.by/pogoda/minsk/" target="AAA"
+                     title="yandex погода" alt="Кнопка yandex-погода">
+                  <area shape="rect" coords="452,139,495,180" href="https://radio.yandex.ru/" target="AAA"
+                     title="yandex-радио" alt="Кнопка yandex-радио">
+                  <area shape="rect" coords="345,139,388,180" href="https://yandex.by/maps/" target="AAA"
+                     title="yandex-карта" alt="Кнопка yandex-навигатор">
+                  <area shape="circle" coords="367,273,23" href="https://onlayn-radio.ru/" target="AAA"
+                     title="на сайт www.onlayn-radio.ru" alt="Кнопка FM-Радио">
+                  <area shape="circle" coords="473,273,23" href="https://light-alloy.com/" target="AAA"
+                     title="на сайт www.light-alloy.com" alt="Кнопка light-alloy">
+                  <area shape="circle" coords="579,276,23" href="https://yandex.by/" target="AAA"
+                     title="на сайт www.yandex.by" alt="Кнопка yandex">
+                  <area shape="circle" coords="685,273,23" href="https://minsk.deal.by/Filmy-dvd.html" target="AAA"
+                     title="на сайт с dvd" alt="Кнопка dvd">
+               </map>
+            </div>
+            <p>
+               Спасибо, что дочитали эту страницу до конца)))
+            </p>
+
+         </div>
+
+      </div>
+      <hr>
+      <footer style="padding-top: 2px;
+               padding-left: 5px;
+               padding-bottom: 2px;">
+         <address>
+            <p style="font-size: 12px; 
+               text-indent: 0cm; 
+               font-family: sans-serif; 
+               color: red;">
+               Материал подготовлен в качестве домашнего задания по курсу &#171;Основы веб технологий&#187; <br>
+               Тема 4. Отступы. Фон. Таблицы<br>
+               Исполнитель: Kirill Zhukovski &copy;<img src="img/GoodBeetle round white 260x260.png" width="26"
+                  title="GoodBeetle" alt="GoodBeetle"> <br>
+               6824682@mail.ru <br>
+               +375296824682
+            </p>
+         </address>
+      </footer>
+
+</body>
+
+</html>
