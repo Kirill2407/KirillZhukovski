@@ -1,25 +1,38 @@
 body{
-   padding-left: 10%;
-   padding-right: 10%;
+   background-image: url(img/bg_page.png);
+  
+      
+}
+
+header {
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   background: bisque;
+   border-radius: 15px;
+   box-shadow: 0 0 10px blue;
    
 }
 
-header{
-   background: bisque;
-}
-
-div{
+div {
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
    background-color: gold;
-}
+   border-radius: 15px;
+   box-shadow: 0 0 10px blue;
+   padding-bottom: 5px;
+   }
 h1 {
    font-family: 'Roboto', sans-serif;
    color: limegreen;
    padding-left: 5%;
-   padding-top: 1%
+   padding-top: 1%;
+   padding-bottom: 1%;
 
 } 
 
-h2{
+h2 {
    font-family: 'Roboto', sans-serif;;
    padding-left: 5%;
    padding-top: 1%
@@ -29,6 +42,6 @@ p, ul {
    padding-left: 5%;
    ;
 }
-a{
+a {
    font-family: 'Roboto', sans-serif;;
 }
