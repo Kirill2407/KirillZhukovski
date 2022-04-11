@@ -15,6 +15,16 @@
          font-size: 18px;
          color: blueviolet;
       }
+      .ramka {
+         padding-top: 2%;
+         padding-bottom: 2%;
+         padding-left: 5%;
+         padding-right: 5%;
+         font-size: 20px;
+
+      }
+
+
 </style>
 
 </head>
@@ -31,17 +41,27 @@
       <hr>
       <br>
    </header>
-   <div style="background-image: url(img/ramka.png);
-               background-size: 100% 100%;
-               background-repeat: no-repeat;
-               ">
+   <!-- свойство "border-image". Указываем:
+               border: 60px(толщина рамки), сплошная;
+               border-image: url(путь к картинке) 100(устанавливаем смещение 100px от верхней, правой, нижней и левой кромки изображения) round (изображение масштабируемо и должно повторяться, пока не заполнит зазор между двумя границами.);
+               border-image-width: 120px(ширина границы-изображения);
+            -->
+   <div style="border: 60px solid; 
+               border-image: url(img/ramka.png) 100 round;
+               border-image-width: 120px;"
+               >
 
-      <p style="padding-top: 20%;
-                  padding-bottom: 20%;
-                  padding-left: 15%;
-                  padding-right: 15%;
-                  font-size: 60px;">
-         Вывод: использование свойства <span style="font-style: italic; color: red;">background-size</span> практически всегда приводит к изменению размеров исходного изображения: если изображение меньше размера блока с текстом (элемента контента), браузер увеличивает его маштаб, что выражается заметным дублированием пикселов и ухудшением качества изображения!   </p>
+      <div class="ramka">
+         Cвойство <span style="font-style: italic; color: red;">border-image</span> используется для отображения рисованной рамки вокруг элемента. <br>
+      
+         Название свойства состоит из двух слов: «рамка» и «картинка». Вокруг них всё и вертится. Интуитивно его действие можно представить в виде примерно такого алгоритма: 
+         <ul>
+            <li>Берем картинку.</li>
+            <li>Вырезаем из этой картинки рамку.</li>
+            <li>Заготавливаем «каркас» рамки по размерам нужного блока. Если надо, подгоняем ее толщину, положение краев и т.д.</li>
+            <li>«Натягиваем» вырезанную часть картинки на этот «каркас».</li>
+         </ul>
+      </div>
    </div>
    <hr>
    <footer style="padding-top: 2px;
