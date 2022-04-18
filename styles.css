@@ -1,29 +1,43 @@
-body{
+
+html {
    background-image: url(img/bg_page.png);
    background-attachment: fixed;
-  
+   padding-top: 25px;
+   }
+
+
+body{
+   width:80%;
+   padding:20px;
+   margin: 0 auto;
       
 }
 
 header {
-   width: 80%;
    margin-left: auto;
    margin-right: auto;
-   background: bisque;
+   background-color:#e1edeb;
    border-radius: 15px;
-   box-shadow: 0 0 10px blue;
-   
+   box-shadow: 10px 10px 10px rgba(142, 42, 42, 0.5);
 }
 
 div {
-   width: 80%;
    margin-left: auto;
    margin-right: auto;
    background-color: gold;
    border-radius: 15px;
-   box-shadow: 0 0 10px blue;
+   box-shadow: 10px 10px 10px rgba(184, 55, 176, 0.5);
    padding-bottom: 5px;
    }
+
+   .futter {
+      background-color: limegreen;
+      border-radius: 15px;
+   box-shadow: 10px 10px 10px rgba(184, 55, 176, 0.5);      padding-bottom: 5px;
+   
+   }
+
+
 h1 {
    font-family: 'Roboto', sans-serif;
    color: limegreen;
