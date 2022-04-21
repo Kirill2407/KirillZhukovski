@@ -3,6 +3,7 @@ html {
    background-image: url(img/bg_page.png);
    background-attachment: fixed;
    padding-top: 25px;
+   padding-bottom: 50px;
    }
 
 
@@ -18,7 +19,7 @@ header {
    margin-right: auto;
    background-color:#e1edeb;
    border-radius: 15px;
-   box-shadow: 10px 10px 10px rgba(142, 42, 42, 0.5);
+   box-shadow: 10px 10px 10px rgba(96, 247, 73, 0.5);
 }
 
 div {
@@ -26,14 +27,14 @@ div {
    margin-right: auto;
    background-color: gold;
    border-radius: 15px;
-   box-shadow: 10px 10px 10px rgba(184, 55, 176, 0.5);
+   box-shadow: 10px 10px 10px rgba(64, 18, 61, 0.5);
    padding-bottom: 5px;
    }
 
    .futter {
       background-color: limegreen;
       border-radius: 15px;
-   box-shadow: 10px 10px 10px rgba(184, 55, 176, 0.5);      padding-bottom: 5px;
+   box-shadow: 10px 10px 10px rgba(61, 68, 192, 0.5);      padding-bottom: 5px;
    
    }
 

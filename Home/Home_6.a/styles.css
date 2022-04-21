@@ -1,0 +1,79 @@
+p{
+     font-style: italic;
+     font-size: 18px;
+     font-weight: bold;
+
+}
+
+a {
+     color: green
+}
+
+a:hover {
+     color: red
+}
+
+.way2 {
+     color: red; font-weight: bold; font-size: 15px;
+}
+
+div.way3>span {
+          color: red; font-weight: bold; font-size: 25px;
+}
+
+div.way4>a::after{
+     content:  "|" ; color:red; font-weight: bold; font-size: 25px;
+}
+
+
+div.way5>a:nth-child(-n+4) {
+     border-right: solid red 3px ;
+     padding-right: 3px;
+}
+
+
+table {
+     border-collapse: collapse;
+}
+td {
+     
+     padding-left: 20px;
+     padding-right: 20px;
+     border-right: solid red 3px;
+}
+td:last-of-type{
+     border-right: none;
+}
+
+
+.way7>* {
+     display: inline-table;
+     padding-left: 20px;
+     padding-right: 20px;
+     border-right: solid red 3px;
+}
+.way7 :last-of-type {
+     border-right: none;
+}
+
+
+.way8>* {
+     display: inline;
+     padding-left: 20px;
+     padding-right: 20px;
+     border-right: solid red 3px;
+}
+.way8 :last-of-type {
+     border-right: none;
+}
+
+
+.way9>* {
+     display: inline-block;
+     padding-left: 20px;
+     padding-right: 20px;
+     border-right: solid red 3px;
+}
+.way9 :last-of-type {
+     border-right: none;
+}
