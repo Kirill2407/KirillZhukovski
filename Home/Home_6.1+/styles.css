@@ -1,0 +1,64 @@
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+     font-family: 'Roboto', sans-serif;
+     background: url(img/green_wall.png);
+
+}
+
+
+/* Heder */
+.container{
+     width: 1200px;
+     height: 50px;
+     margin: 0 auto;
+}
+
+h1{
+     padding-top: 5px;
+     padding-left: 25px;
+}
+
+.header{
+     height: 52px;
+     background-color:#C1446F ;
+}
+
+.underheder{
+          background: #000;
+          height: 5px;
+          margin: 0 auto;
+}
+
+
+/* Content */
+.conent{
+          width: 1200px;
+          margin: 20px auto;
+          background: rgb(234, 241, 240);
+          border-radius: 15px;
+          padding-left: 25px;
+          padding-right: 25px;
+}
+
+.conent>ul{
+     padding-left: 30px;
+}
+
+
+.conent>h2,h3 {
+     padding-top: 15px;
+     padding-bottom: 15px;
+}
+.conent>p{
+     padding-top: 15px;
+}
+
+.div__img{
+     text-align: center;
+}

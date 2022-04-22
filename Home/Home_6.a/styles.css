@@ -2,36 +2,49 @@ p{
      font-style: italic;
      font-size: 18px;
      font-weight: bold;
-
 }
 
+/* применено для всех ссылок */
 a {
      color: green
 }
-
 a:hover {
      color: red
 }
 
+/* Сопособ Второй */
 .way2 {
      color: red; font-weight: bold; font-size: 15px;
 }
 
+
+/* Способ Третий */
 div.way3>span {
           color: red; font-weight: bold; font-size: 25px;
 }
 
+
+/* Способ Четвертый */
 div.way4>a::after{
      content:  "|" ; color:red; font-weight: bold; font-size: 25px;
 }
 
 
-div.way5>a:nth-child(-n+4) {
+/* Способ Пятый */
+.way5 ul{
+     padding-left: 0px;
+}
+.way5 li {
+     display: inline;
+     list-style-type: none;
+}
+div.way5 a:nth-child(-n+4) {
      border-right: solid red 3px ;
      padding-right: 3px;
 }
 
 
+/* Способ Шестой */
 table {
      border-collapse: collapse;
 }
@@ -46,6 +59,7 @@ td:last-of-type{
 }
 
 
+/* Способ Седьмой */
 .way7>* {
      display: inline-table;
      padding-left: 20px;
@@ -57,6 +71,7 @@ td:last-of-type{
 }
 
 
+/* Способ Восьмой */
 .way8>* {
      display: inline;
      padding-left: 20px;
@@ -68,6 +83,7 @@ td:last-of-type{
 }
 
 
+/* Способ Девятый */
 .way9>* {
      display: inline-block;
      padding-left: 20px;
