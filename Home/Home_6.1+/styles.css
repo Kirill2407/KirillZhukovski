@@ -14,7 +14,7 @@ body{
 
 /* Heder */
 .container{
-     width: 1200px;
+     width: 90%;
      height: 50px;
      margin: 0 auto;
 }
@@ -38,7 +38,7 @@ h1{
 
 /* Content */
 .conent{
-          width: 1200px;
+          width: 90%;
           margin: 20px auto;
           background: rgb(234, 241, 240);
           border-radius: 15px;
@@ -46,7 +46,7 @@ h1{
           padding-right: 25px;
 }
 
-.conent>ul{
+.conent>ul, ol{
      padding-left: 30px;
 }
 
