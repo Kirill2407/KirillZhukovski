@@ -1,0 +1,155 @@
+/* 1440px */
+@media all and (max-width:1440px) {
+     h1 {
+          font-size: 1.5em;
+     }
+}
+
+
+
+/* 1200px */
+@media all and (max-width:1200px){
+     .one1 {
+          float: none;
+          padding-top: 7px;
+          padding-right: 0px;
+          padding-left: 0px;
+          padding-bottom: 0px;
+     }
+     .menu__img1 {
+          width: 300px;
+          padding: 25px;
+          padding-bottom: 0px;
+          float: none;
+     }
+
+     .fuel__wrap2 h2 {
+          padding-top: 0px;
+          padding-left: 25px;
+          text-decoration: underline;
+          color: lawngreen;
+     }
+
+     .fuel__wrap2 p {
+          padding-left: 25px;
+     }     
+
+}
+
+
+
+/* 1140px */
+@media all and (max-width:1140px) {
+
+     .menu__img1 {
+          width: 200px;
+     }
+
+     .header,
+     .footer,
+     fuel__wrap2 h2 {
+          font-size: 1em;
+     }
+
+     .one2 {
+          float: none;
+     }
+
+}
+
+
+
+/* 992px */
+@media all and (max-width:992px) {
+     
+     }
+
+
+
+/* 768px */
+@media all and (max-width:768px) {
+
+
+     
+          .header, .footer, h2 {
+               font-size: 1.15em;
+          }
+
+     .container{
+          background: none;
+     }
+     .menu{
+          padding-left: 25px;
+          background: url(../img/bg_768px.png) repeat-y;
+          float: none;
+          width: 100%;
+     }
+
+     .content{
+          background: url(../img/Logo5_EVMASIA22_for720px.png) right top repeat-y;
+          float: none;
+          width: 100%;
+          padding-left: 25px;
+     }
+
+     .one2 {
+          padding-right: 0px;
+          padding-left: 0px;
+          padding-bottom: 0px;
+     }
+
+}
+
+@media all and (max-width:720px) {
+
+     .menu__img1 {
+               width: 200px;
+               padding: 25px;
+               padding-bottom: 0px;
+               float: none;
+     }
+
+     .one1, .one2 {
+          width: 70%;
+     }
+
+     .list li {
+          padding-bottom: 0px;
+     }
+
+     h4~img {
+          width: 3em;
+     }
+
+}
+
+
+
+/* 560px */
+@media all and (max-width:560px) {
+     h1 {
+          font-size: 1em;
+     }
+
+     .header,
+     .footer>h2 {
+          font-size: 0.8em;
+     }
+
+     p{
+          font-size: 14px;
+     }
+
+
+
+
+}
+
+
+
+
+
+
+
+/* 320px */
+@media all and (max-width:320px) {}

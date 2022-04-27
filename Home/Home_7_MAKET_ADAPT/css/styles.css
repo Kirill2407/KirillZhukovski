@@ -1,0 +1,115 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+/* Header, Footer */
+.header, .footer{
+     height: 100px;
+     background-color: lightgreen;
+     text-align: center;
+}
+
+.header,
+.footer h2{
+font-family: 'Roboto-Black';
+padding-top: 37px;
+}
+
+
+/* Wrap */
+.container{
+     background: url(../img/Logo4_EVMASIA22.png) right top repeat-y,
+     url(../img/bg_wrap_transparent3.png) 30% 0 repeat-y;
+
+}
+
+.container::after{
+     content: "";
+     display: block;
+     clear: both;
+}
+
+
+/* Menu */
+.menu{
+     float: left;
+     width: 30%;
+}
+
+.list{
+     font-family: 'Roboto-Medium';
+     padding-left: 25px;
+     padding-top: 7px;
+     list-style-type: none;
+}
+
+.list li{
+     padding-bottom: 20px;
+}
+
+.menu__img1{
+     width: 50%;
+     padding: 25px;
+     padding-bottom: 55px;
+     float: left;
+}
+
+.fuel__wrap2::after{
+     content: "";
+     display: block;
+     clear: both;
+}
+
+.fuel__wrap2 h2 {
+     padding-top: 21px;
+     text-decoration: underline;
+     color: lawngreen;
+}
+.sponsors>h4 {
+     padding-top: 25px;
+     padding-left: 25px;
+     font-family: 'Roboto-ThinItalic';
+     text-decoration: underline;
+     color
+}
+
+
+/* Content */
+.content{
+     padding-left: 31% ;
+}
+
+h1{
+     font-family: 'Roboto-Bold';
+     padding-top: 6px;
+     padding-bottom: 16px;
+}
+
+p{
+     font-size: 16px;
+     font-family: 'Roboto-Medium';
+}
+
+span{
+     color: #ff6365;
+}
+
+.one1{
+     float:right;
+     padding-top: 11px;
+     padding-right: 20px;
+     padding-left: 20px;
+     padding-bottom: 20px;
+
+}
+
+.one2{
+     float: left;
+     padding-right: 20px;
+     padding-left: 0px;
+     padding-bottom: 0px;
+
+}

@@ -1,0 +1,40 @@
+
+
+@media all and (max-width: 960px) {
+
+     .bunner,
+     .menu {
+          height: 400px;
+     }
+
+     .bunner {
+          background: yellowgreen;
+     }
+
+     .menu {
+          background-color: gold;
+     }
+}
+
+
+
+@media all and (max-width: 798px) {
+     .menu {
+          float: right;
+     }
+
+     .bunner {
+          float: left;
+     }
+}
+
+@media all and (max-width: 700px) {
+
+     .bunner,
+     .menu {
+          width: 100%;
+          height: 100%;
+          float: none;
+
+     }
+}
