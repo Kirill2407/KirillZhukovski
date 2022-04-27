@@ -6,21 +6,6 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>CHESS</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>CHESS</title>
      <style>
           .chess {
                font-weight: 900;
@@ -36,22 +21,58 @@
                font-weight: bold;
           }
 
-          a[href] {
-               background: url(img/extref.png) no-repeat;
-               background-position: 0 4px; 
-               padding-left: 12px;
-               font-weight: bold;
-               text-decoration: none;
+          a[href]::before {
+               content: url(img/extref.png);
           }
 
           .info {
                font-style: italic;
                color: blue;
           }
+
+          @media print and (min-width:20cm) {
+
+               /* Ссылка Ботвинник */
+               a[href$='botvinnik.shtml']::before {
+                    content: 'ссылка ';
+               }
+
+               a[href$='botvinnik.shtml']::after {
+                    content: ' на https://chesspro.ru/statistic/botvinnik.shtml';
+               }
+
+
+               /* Ссылка Карпов */
+               a[href$='karpov.shtml']::before {
+                    content: 'ссылка ';
+               }
+
+               a[href$='karpov.shtml']::after {
+                    content: ' на https://chesspro.ru/statistic/botvinnik.shtml';
+               }
+
+
+               /* Ссылка Каспаров */
+               a[href$='kasparov.shtml']::before {
+                    content: 'ссылка ';
+               }
+
+               a[href$='kasparov.shtml']::after {
+                    content: ' на https://chesspro.ru/statistic/botvinnik.shtml';
+               }
+
+          }
      </style>
 </head>
 
 <body>
+     <!-- 7.1+
+На странице про шахматистов (проект CHESS) сделать так, чтобы при печати на принтере ВМЕСТО каждой внешней ссылки
+печаталось ""(ссылка ТЕКСТ на URL)"", где ""ТЕКСТ"" - текст ссылки, а ""URL"" - URL, куда ведёт ссылка;
+например, вместо ссылки ""Информация"", ведущей на https://chesspro.ru/statistic/botvinnik.shtml, должно печататься:
+""(ссылка Информация на https://chesspro.ru/statistic/botvinnik.shtml)""
+HTML-код не менять, задание выполнять только в теге <style> -->
+
      <a id="top"></a>
      <p class="chess">Михаил Ботвинник</p>
      <p class="data">Дата рождения: 17 августа 1911 г.</p>
