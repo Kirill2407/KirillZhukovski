@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Forms</title>
+     <style>
+          textarea{
+               width: 300px;
+               height: 100px;
+               resize: none;
+          }
+     </style>
+</head>
+<body>
+     <div>
+          <form action="http://fe.it-academy.by/TestForm.php" method="get" enctype="multipart/form-data" style="background-color: aqua;">
+               Ваше имя:        <input type="text" name="fio" value="test" placeholder="test11" readonly maxlength="10"><br>
+               Ваш возраст:     <input type="text" name="age"><br>
+               Ваш пол:         <input type="text" name="gender" autofocus><br>
+               Ваше образование:<input type="text" name="edukation"><br>
+               Ваш пароль       <input type="password" name="pass"><br>
+
+               <hr>
+               <input type="checkbox" name="chek1" value="yes">
+               <input type="checkbox" name="chek2" value="yes">
+               <input type="checkbox" name="chek3" value="yes">
+               <input type="checkbox" name="chek4" value="yes"><br>
+
+               <hr>
+               <input type="checkbox" name="chek[]" value="yes1">
+               <input type="checkbox" name="chek[]" value="yes2" checked>
+               <input type="checkbox" name="chek[]" value="yes3">
+               <input type="checkbox" name="chek[]" value="yes4"><br>
+
+               <hr>
+               <input type="radio" name="radio1" value="rad1">
+               <input type="radio" name="radio1" value="rad2" checked>
+               <input type="radio" name="radio1" value="rad3">
+               <input type="radio" name="radio1" value="rad4"><br>
+
+               <hr>
+               <input type="radio" name="radio" value="rad1">
+               <input type="radio" name="radio" value="rad2" checked>
+               <input type="radio" name="radio" value="rad3">
+               <input type="radio" name="radio" value="rad4"><br>
+
+               <hr>
+               <input type="file" name="file">
+               <input type="hidden" name="formtype" value="form1">               
+               <hr>
+               <textarea name="text">Предзаданный текст в окне пишится между тегами textarea. Или можно использовать атрибут placeholder в самом теге textarea </textarea>
+               <hr>
+               <input type="submit" value="send"><br>
+               <input type="reset" value="reset"><br>
+               <input type="button" value="button" disabled> <br>
+
+               <!-- атрибут value="send" говорит о том, что мв изменяем язык кнопки с русского (отправить) на английский (send). 
+               По умолчанию стоит язык браузера(по версии операционки-русский). Т.Е. в моем случае - русский -->
+          </form>
+
+          <br><br><br>
+
+
+          <form action="http://fe.it-academy.by/TestForm.php" method="get" enctype="multipart/form-data" style="background-color: rgba(171, 161, 93, 0.736);">
+               <label>
+                    Ваше имя: <input type="text" name="fio" value="test12345" placeholder="test11" readonly maxlength="10">
+               </label>
+               <br>
+               Ваш возраст: <input type="text" name="age"><br>
+               Ваш пол: <input type="text" name="gender"><br>
+               Ваше образование:<input type="text" name="edukation"><br>
+               Ваш пароль <input type="password" name="pass"><br>
+          
+               <hr>
+               <input type="checkbox" name="chek1" value="yes">
+               <input type="checkbox" name="chek2" value="yes">
+               <input type="checkbox" name="chek3" value="yes">
+               <input type="checkbox" name="chek4" value="yes"><br>
+          
+               <hr>
+               <input type="checkbox" name="chek[]" value="yes1">
+               <input type="checkbox" name="chek[]" value="yes2" checked>
+               <input type="checkbox" name="chek[]" value="yes3">
+               <input type="checkbox" name="chek[]" value="yes4"><br>
+          
+               <hr>
+               <input type="radio" name="radio1" value="rad1">
+               <input type="radio" name="radio1" value="rad2" checked>
+               <input type="radio" name="radio1" value="rad3">
+               <input type="radio" name="radio1" value="rad4"><br>
+          
+               <hr>
+               <input type="radio" name="radio" value="rad1">
+               <input type="radio" name="radio" value="rad2" checked>
+               <input type="radio" name="radio" value="rad3">
+               <input type="radio" name="radio" value="rad4"><br>
+          
+               <hr>
+               <textarea name="text" placeholder="Напишите здесь Ваш отзыв"></textarea>
+               <input type="file" name="file">
+               <input type="hidden" name="formtype" value="form2">
+
+               <hr>
+               <select name="city[]">
+                    <optgroup label="Belarus">
+                    <option value="Minsk">Minsk</option>
+                    <option value="Gomel">Gomel</option>
+                    <option value="Brest">Brest</option>
+                    <option value="Grodno">Grodno</option>
+                    <option value="Vitebsk">Vitebsk</option>
+                    <option value="Mogilev">Mogilev</option>
+                    </optgroup>
+
+                    <optgroup label="Russia">
+                    <option value="Moscow">Moscow</option>
+                    <option value="Piter">Piter</option>
+                    <option value="Smolensk">Smolensk</option>
+                    <option value="Sochy">Sochy</option>
+                    <option value="Tula">Tula</option>
+                    <option value="Tomsk">Tomsk</option>
+                    </optgroup>               
+               </select>
+               <input type="submit" value="send">
+          </form>
+
+
+     </div>
+<br><br><br> 
+
+
+
+</body> 
+</html>
