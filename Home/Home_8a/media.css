@@ -1,0 +1,40 @@
+@media all and (max-width: 768px) {
+     .title,
+     .select {
+          float: none;
+     }
+
+     .publication {
+          width: 105px;
+     }
+
+     .title__input,
+     .option__select {
+          margin-left: 0px
+     }
+
+     textarea {
+          color: blue;
+     }
+
+
+     }
+
+
+@media all and (max-width: 560px) {
+          .publication {
+               float: none;
+          }
+          
+          .radiopublication {
+               margin-left: 0px
+          }
+
+          .radio__publication span {
+               display: block;
+          }
+
+          textarea {
+               color:rgb(235, 10, 247);
+          }
+}

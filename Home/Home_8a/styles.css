@@ -1,0 +1,54 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.anketa1 {
+     margin: 10px 10px 10px 10px;
+     font-size: 18px;
+}
+
+.title,
+.select,
+.publication {
+     width: 200px;
+     float: left;
+
+}
+
+.title__input,
+.option__select,
+.radiopublication {
+     margin-left: 200px
+}
+
+.title__input input {
+     display: block;
+     width: 100%;
+     height: 20px;
+}
+
+.clearfix {
+     margin-top: 2px;
+}
+
+.clearfix::after {
+     content: "";
+     display: block;
+     clear: both;
+}
+
+.radio__publication span {
+     display: inline-block;
+}
+
+.anketa1 textarea {
+     height: 40px;
+     width: 100%;
+}
+
+textarea {
+     color: red;
+}
+

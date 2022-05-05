@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>MAKET FORM</title>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+     <!-- todo Сверстать проект MAKET_FORM.
+
+И в широком, и в узком варианте расстояние между левым краем текстовых полей и левым краем окна браузера должно оставаться постоянным; расстояние между правым краем текстовых полей и правым краем окна браузера должно оставаться постоянным. Резинится только ширина текстовых полей.
+
+Вёрстка блочная, адаптивная, резиновая. Не использовать таблицы, позиционирование (position), flex/grid, CSS-функцию calc (даже если умеете).
+
+Макеты для широкого и для узкого окна приложены. Красная двойная рамка на макетах символизирует размер окна браузера (она показана только для ориентировки, её верстать не надо).
+
+todo Количество и положение точек перехода определить самостоятельно.  -->
+
+     <div class="anketa1">
+
+          <form action="http://fe.it-academy.by/TestForm.php" method="get" target="AAA">
+               Для публикации вашей статьи заполните, пожалуйста, следующую форму:<br><br>
+
+               <div class="wraptitle">
+                    <div class="title">
+                         Название статьи:
+                    </div>
+                    <div class="title__input">
+                         <div class="clearfix">
+                              <input type="text" name="title">
+                         </div>
+                    </div>
+               </div>
+
+               <div class="wrapselect">
+                    <div class="select">
+                         Рубрика:
+                    </div>
+                    <div class="option__select">
+                         <div class="clearfix">
+                              <select class="select">
+                                   <option value="programming">программирование</option>
+                                   <option value="computer technology">компьютерная техника</option>
+                                   <option value="graphics and design">графика и дизайн</option>
+                              </select>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="wrappublication">
+                    <div class="publication">
+                         Публикация:
+                    </div>
+                    <div class="radio__publication">
+                         <div class="clearfix">
+                              <span><input type="radio" name="radio1" value="website"> на сайте</span>
+                              <span><input type="radio" name="radio2" value="magazine"> в журнале</span>
+                              <span><input type="radio" name="radio3" value="website and magazine"> на сайте и в
+                                   журнале</span>
+                         </div>
+                    </div>
+               </div>
+
+               <label class="checkbox__coments">
+                    Разрешить комментарии: <input type="checkbox" checked value="yes">
+               </label>
+               <label><br>
+                    Текст статьи:<br>
+                    <textarea name="coments">
+Количество точек перехода - две.
+При (max-width: 768px) и (max-width: 560px)</textarea>
+               </label><br>
+               <input type="submit" value="Опубликовать">
+               <input type="reset" value="Очистить форму">
+
+          </form>
+
+     </div>
+
+
+
+</body>
+
+</html>
