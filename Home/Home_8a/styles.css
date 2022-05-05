@@ -18,8 +18,7 @@
 }
 
 .title__input,
-.option__select,
-.radiopublication {
+.option__select {
      margin-left: 200px
 }
 
@@ -41,6 +40,7 @@
 
 .radio__publication span {
      display: inline-block;
+     margin-right: 20px;
 }
 
 .anketa1 textarea {
