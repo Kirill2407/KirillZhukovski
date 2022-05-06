@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+     <title>FORM_1_8+</title>
+     <style>
+          .anketa{
+               margin: 10px 10px 10px 10px ;
+               border: double 2px red;
+               padding: 10px 10px 10px 10px ;
+          }
+
+          h1{
+               text-align: center;
+          }
+
+          fieldset{
+               padding: 10px 10px 10px 10px ;
+          }
+
+          textarea{
+               width: 300px;
+               height: 100px;
+          }
+
+          button{
+               margin-top: 10px;
+          }
+
+     </style>
+
+
+</head>
+
+<body>
+     <div class="anketa">
+          <h1>Заполните анкету</h1>
+          <form action="http://fe.it-academy.by/TestForm.php" method="get" name="questionnaire">
+               <fieldset>
+                    <legend>Личные данные</legend>
+                    <input type="text" name="surname" size="25" placeholder="Фамилия" required autofocus><br>
+                    <input type="text" name="name" size="20" placeholder="Имя" required><br>
+                    <input type="text" name="patronymic" size="24" placeholder="Отчество" required><br>
+                         <fieldset>
+                              <legend>Паспортные данные</legend>
+                              <input type="text" name="series" size="2" maxlength="2" minlength="2" required placeholder="AA">
+                              <input type="text" name="number" pattern="[0-9]{7}" size="7" maxlength="7" minlength="7" required placeholder="1234567">
+                         </fieldset>
+                         <fieldset>
+                              <legend>Дата рождения</legend>
+                              <input type="text" name="year" size="4" maxlength="4" minlength="4" required placeholder="2000"><br>
+                              <select name="month">
+                                   <option value="January">январь</option>
+                                   <option value="February">февраль</option>
+                                   <option value="March">март</option>
+                                   <option value="April">апрель</option>
+                                   <option value="May">май</option>
+                                   <option value="June">июнь</option>
+                                   <option value="July">июль</option>
+                                   <option value="май">август</option>
+                                   <option value="September">сентябрь</option>
+                                   <option value="October">октябрь</option>
+                                   <option value="November">ноябрь</option>
+                                   <option value="December">декабрь</option>
+                              </select><br>
+                              <input type="number" name="day" size="2" maxlength="2" min="1" max="31" step="1" required placeholder="31">
+                         </fieldset>
+                         <select name="text" required>
+                              <option value="BY">РБ</option>
+                              <option value="RUS">РФ</option>
+                              <option value="US">США</option>
+                              <option value="PL">РП</option>
+                         </select><br>
+                         Адрес:<br>
+                         <textarea name="address"></textarea>
+               </fieldset>
+
+               <fieldset>
+                    <legend>Интересы</legend>
+                    <fieldset>
+                         <legend>Хобби</legend>
+                         <label><input type="checkbox" name="chek[]" value="yes1"> Рыбалка</label> <br>
+                         <label><input type="checkbox" name="chek[]" value="yes2"> Асторономия</label> <br>
+                         <label><input type="checkbox" name="chek[]" value="yes3"> Дайвинг</label> <br>
+                         <label><input type="checkbox" name="chek[]" value="yes4"> Марки</label>
+                    </fieldset>
+                    <fieldset>
+                         <legend>Домашние животные</legend>
+                              <select name="animals[]" size="12" multiple>
+                                   <optgroup label="Попугаи">
+                                        <option value="1">Волнистый</option>
+                                        <option value="2">Ара</option>
+                                        <option value="3">Неразлучник</option>
+                                   <optgroup label="Рыба">
+                                        <option value="4">Караси</option>
+                                        <option value="5">Окуни</option>
+                                        <option value="6">Осётр</option>
+                                   </optgroup>
+                                   <optgroup label="Птицы">
+                                        <option value="7">Стая ворон</option>
+                                        <option value="8">Аист</option>
+                                        <option value="9">Архиоптерикс</option>
+                                   </optgroup>
+                                   </select>
+                    </fieldset>
+               </fieldset>
+
+               <fieldset>
+                    <legend>Данные для входа и востановления пароля</legend>
+                    <input type="text" name="login" minlength="5" size="20" required placeholder="Логин"><br>
+                    <input type="password" name="pass" minlength="10" size="20" required placeholder="Пароль" autocomplete="off">
+               </fieldset>
+
+               <fieldset>
+                    <legend>Координаты</legend>
+                    <input type="email" name="email" size="20" required placeholder="введите адрес почты"><br>
+                    <input type="url" name="url" size="20" required placeholder="введите адрес сайта">
+               </fieldset>
+
+               <fieldset>
+                    <legend>Цифры</legend>
+                    <input type="number" name="number" pattern="[0-9]{-2.5,2.5}" min="-2.5" max="2.5" step="0.1" size="10" required placeholder="-2.5"><br><br>
+                    <input type="range" name="range" min="1" max="10" step="1">
+               </fieldset>
+
+               <fieldset>
+                    <legend>Кнопки управления</legend>
+                    <input type="submit" name="send" value="Отправить">
+                    <input type="submit" name="reset" value="Сбросить"><br>
+                    <button>
+                         <img src="btn1.png" alt="btn">
+                    </button>
+               </fieldset>
+
+
+
+
+
+
+     </div>
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+     </form>
+
+
+
+
+
+
+</body>
+
+</html>
