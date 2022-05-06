@@ -1,0 +1,40 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+table{
+     margin: 20px;
+     border: 10px;
+     
+}
+
+td{
+     height: 150px;
+     width: 350px;
+     
+}
+
+fieldset{
+     padding: 15px;
+}
+
+.radio input {
+     margin-left: 10px;
+}
+
+textarea{
+     height: 40px;
+     width: 180px;
+     margin-top: 15px;
+}
+
+span, li{
+     font-style: italic;
+     padding-left: 30px;
+}
+
+ul{
+     padding-left: 50px;
+}
