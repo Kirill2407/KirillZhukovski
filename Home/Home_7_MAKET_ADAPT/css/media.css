@@ -75,6 +75,26 @@
                font-size: 1.15em;
           }
 
+.top__block {
+     height: 55px;
+     width: 110px;
+     position: fixed;
+     top: 73px;
+     right: 57px;}
+     
+
+.top__block:hover {
+     background-color: rgb(174, 105, 239);
+}
+
+.top__block a {
+     position: absolute;
+     top: 12px;
+     left: 20px;
+     font-size: 13px;
+}
+
+
      .container{
           background: none;
      }

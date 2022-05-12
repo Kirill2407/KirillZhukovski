@@ -14,8 +14,28 @@
 
 .header,
 .footer h2{
-font-family: 'Roboto-Black';
-padding-top: 37px;
+     font-family: 'Roboto-Black';
+     padding-top: 37px;
+}
+
+.top__block {
+     height: 70px;
+     width: 130px;
+     background-color: #ff6365;
+     border: solid 1px black;
+     position: fixed;
+     top: 67px;
+     right: 57px;
+}
+
+.top__block:hover {
+     background-color: rgb(174, 105, 239);
+}
+
+.top__block a {
+     position: absolute;
+     top: 15px;
+     left: 23px;
 }
 
 
