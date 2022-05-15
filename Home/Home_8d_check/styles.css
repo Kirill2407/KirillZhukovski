@@ -1,0 +1,22 @@
+
+.test1 input[type="checkbox"] {
+     display:none
+}
+
+
+.test1 label{
+     position:relative;
+}
+
+.test1 label::before{
+     content: "";     
+     width: 80px;
+     height: 80px;
+     background: url(img/check.png) no-repeat  -0.5px 0px;
+     position: absolute;
+}
+.test1 input:checked + label::before {
+     content: "";
+     background: url(img/check.png) no-repeat -116px 0px;
+}
+
